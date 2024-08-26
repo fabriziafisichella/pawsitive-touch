@@ -12,33 +12,6 @@
     animation: bounce 0.4s linear;
   }
 
-  .title {
-    position: relative;
-    margin-top: -65px;
-    width: 100%;
-    text-align: center;
-
-    .pawsitive {
-      height: 50px;
-
-      .paw {
-        @include mixins.logoPawsitive;
-        font-size: 55px;
-        animation: pawPulse 3s linear infinite;
-      }
-      .sitive {
-        @include mixins.logoPawsitive;
-        font-size: 35px;
-        letter-spacing: -1px;
-        animation: sitivePulse 2.5s linear;
-      }
-    }
-
-    .touch {
-      @include mixins.logoTouch;
-      animation: touchPulse 2s linear infinite;
-    }
-  }
 }
 
 @keyframes bounce {
@@ -56,47 +29,5 @@
   }
   100% {
     transform: scale(1);
-  }
-}
-
-@keyframes pawPulse {
-  0%,
-  10%,
-  14%,
-  100% {
-    opacity: 0%;
-  }
-  12%,
-  15%,
-  98% {
-    opacity: 100%;
-  }
-}
-
-@keyframes sitivePulse {
-  0%,
-  10%,
-  18%,
-  26% {
-    opacity: 0%;
-  }
-  14%,
-  22%,
-  100% {
-    opacity: 100%;
-  }
-}
-
-@keyframes touchPulse {
-  0%,
-  10%,
-  20%,
-  100% {
-    opacity: 0%;
-  }
-  15%,
-  25%,
-  95% {
-    opacity: 100%;
   }
 }

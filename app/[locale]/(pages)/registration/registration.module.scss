@@ -3,7 +3,19 @@
 
 .container {
   width: 300px;
-  margin-bottom: -30px;
+
+  .link {
+    @include mixins.linkButton;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    
+    input {
+        width: 18px;
+        height: 18px;
+        margin-right: 5px;
+    }
+  }
 
   .form {
     display: flex;
@@ -17,19 +29,6 @@
     input {
       @include mixins.input;
       @include mixins.logoPawsitive;
-    }
-
-    .forgot {
-      @include mixins.linkButton;
-    }
-  }
-
-  .button {
-    @include mixins.input;
-    @include mixins.darkButton;
-
-    .icon {
-      font-size: 30px;
     }
   }
 }

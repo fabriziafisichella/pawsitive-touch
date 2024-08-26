@@ -1,5 +1,7 @@
+"use client";
+
 import style from "./login.module.scss";
-import { useRouter } from "next/navigation";
+import { useRouter } from "@/navigation";
 import { useTranslations } from "next-intl";
 import { Button } from "../Button/Button";
 import { FcGoogle } from "react-icons/fc";
@@ -8,7 +10,7 @@ import { FcGoogle } from "react-icons/fc";
 export function Login() {
   
   const t = useTranslations("HomePage");
-  const router = useRouter();
+  const router = useRouter(); 
   
 
   const handleRegister = () => {
@@ -30,7 +32,7 @@ export function Login() {
         <FcGoogle className={style.icon} />
         {t("google")}
       </div>
-      <div className={style.button}>
+      <div className={style.button} onClick={handleRegister}>
         {t("email")}
       </div>
     </div>

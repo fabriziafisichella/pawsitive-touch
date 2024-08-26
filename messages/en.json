@@ -4,6 +4,14 @@
     "google": "Login with Google",
     "email": "Sign up with your email"
   },
+  "Registration": {
+    "login": "Already registered? Login here.",
+    "username": "Choose your username",
+    "email": "Choose your email",
+    "password": "Choose your password",
+    "tos": "I accept the terms of service",
+    "register": "Register"
+  },
   "ImageAlt": {
     "logo": "Logo, image of a cat's paw."
   }

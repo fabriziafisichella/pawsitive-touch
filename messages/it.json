@@ -4,6 +4,14 @@
     "google": "Entra con Google",
     "email": "Registrati con la tua email"
   },
+  "Registration": {
+    "login": "Già registrato? Fai il login.",
+    "username": "Scegli il tuo username",
+    "email": "Scegli la tua email",
+    "password": "Scegli la tua password",
+    "tos": "Accetto i termini del servizio",
+    "register": "Registrati"
+  },
   "ImageAlt": {
     "logo": "Logo, immagine di una zampa di gatto."
   }
