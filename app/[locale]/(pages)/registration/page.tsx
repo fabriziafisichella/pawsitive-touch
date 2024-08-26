@@ -13,8 +13,8 @@ export default function Registration() {
   return (
     <main>
       <div className={style.container}>
-        <ThreeWords first="Create" second="New" third="Account" />
-        <div className={style.link} onClick={() => router.back()}>
+        <ThreeWords first={t("first")} second={t("second")} third={t("third")} />
+        <div className={style.link} onClick={() => router.push("/")}>
           {t("login")}
         </div>
         <form className={style.form}>

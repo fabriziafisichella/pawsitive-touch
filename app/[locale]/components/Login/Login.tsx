@@ -17,6 +17,10 @@ export function Login() {
     router.push("/registration");
   };
 
+  const handleRecovery = () => {
+    router.push("/recovery")
+  }
+
   return (
     <div className={style.container}>
       <form className={style.form} autoComplete="off">
@@ -24,7 +28,7 @@ export function Login() {
         <input type="text" name="username" placeholder="Username" />
         <label>Password</label>
         <input type="password" name="password" placeholder="Password" />
-        <div className={style.forgot}>{t("forgot")}</div>
+        <div className={style.forgot} onClick={handleRecovery}>{t("forgot")}</div>
 
         <Button name="Login" />
       </form>

@@ -10,7 +10,18 @@
     "email": "Choose your email",
     "password": "Choose your password",
     "tos": "I accept the terms of service",
-    "register": "Register"
+    "register": "Register",
+    "first": "Create",
+    "second": "New",
+    "third": "Account"
+  },
+  "Recovery": {
+    "first": "Recover",
+    "second": "Your",
+    "third": "Password",
+    "goback": "Go back here.",
+    "placeholder": "Enter your email",
+    "recovery": "Recovery"
   },
   "ImageAlt": {
     "logo": "Logo, image of a cat's paw."

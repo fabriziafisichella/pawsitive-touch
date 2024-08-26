@@ -10,7 +10,18 @@
     "email": "Scegli la tua email",
     "password": "Scegli la tua password",
     "tos": "Accetto i termini del servizio",
-    "register": "Registrati"
+    "register": "Registrati",
+    "first": "Crea",
+    "second": "Nuovo",
+    "third": "Account"
+  },
+  "Recovery": {
+    "first": "Recupera",
+    "second": "La",
+    "third": "Password",
+    "goback": "Torna indietro qui.",
+    "placeholder": "Inserisci la tua email",
+    "recovery": "Recupera"
   },
   "ImageAlt": {
     "logo": "Logo, immagine di una zampa di gatto."
