@@ -1,0 +1,76 @@
+@use "./variables";
+
+@mixin logoPawsitive {
+  color: variables.$main-pink;
+  font-family: variables.$main-font;
+  text-shadow: 0 0 10px variables.$main-pink-shadow;
+}
+
+@mixin logoTouch {
+  color: variables.$main-aqua;
+  font-family: variables.$main-font-line;
+  font-size: 60px;
+  text-shadow: 0 0 10px variables.$main-aqua-shadow;
+}
+
+@mixin loginLabels {
+  color: variables.$main-aqua;
+  font-family: "Lovelo Black";
+  text-shadow: 0 0 10px variables.$main-aqua-shadow;
+  letter-spacing: 3px;
+  font-size: 18px;
+}
+
+@mixin input {
+  margin-bottom: 10px;
+  outline: none;
+  border: none;
+  padding-block: 10px;
+  padding-top: 12px;
+  padding-inline: 20px;
+  border-radius: 30px;
+  background: #111112 !important;
+}
+
+@mixin circle {
+  background: linear-gradient(
+      45deg,
+      variables.$main-pink-shadow,
+      variables.$main-aqua-shadow
+    )
+    border-box;
+  mask: linear-gradient(#000 0 0) exclude, linear-gradient(#000 0 0) content-box;
+}
+
+@mixin darkButton {
+  margin-block: 10px;
+  text-align: center;
+  color: variables.$main-aqua;
+  text-shadow: 0 0 10px variables.$main-aqua-shadow;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: 0.35s all ease;
+  cursor: pointer;
+
+  &:hover {
+    color: variables.$main-pink;
+    text-shadow: 0 0 10px variables.$main-pink-shadow;
+  }
+}
+
+@mixin linkButton {
+  text-align: center;
+  color: variables.$text-green;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 0.35s all ease;
+  cursor: pointer;
+
+  &:hover {
+    color: variables.$main-aqua;
+  }
+}

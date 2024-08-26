@@ -1,0 +1,35 @@
+@use "../../assets/mixins";
+@use "../../assets/variables";
+
+.container {
+  width: 100%;
+  margin-bottom: -30px;
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    label {
+      @include mixins.loginLabels;
+    }
+
+    input {
+      @include mixins.input;
+      @include mixins.logoPawsitive;
+    }
+
+    .forgot {
+      @include mixins.linkButton;
+    }
+  }
+
+  .button {
+    @include mixins.input;
+    @include mixins.darkButton;
+
+    .icon {
+      font-size: 30px;
+    }
+  }
+}

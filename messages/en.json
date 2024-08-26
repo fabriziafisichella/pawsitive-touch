@@ -1,0 +1,10 @@
+{
+  "HomePage": {
+    "forgot": "Forgot your password?",
+    "google": "Login with Google",
+    "email": "Sign up with your email"
+  },
+  "ImageAlt": {
+    "logo": "Logo, image of a cat's paw."
+  }
+}

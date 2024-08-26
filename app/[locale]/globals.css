@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  -ms-overflow-style: none; /* Hides ScrollBar in Internet Explorer 10+ */
+  scrollbar-width: none; /* Hides Scrollbar in Firefox and Opera */
+}
+
+*::-webkit-scrollbar {
+  display: none; /* Hides ScrollBar in Safari and Chrome */
+}
+
+@font-face {
+  font-family: "Lovelo Black";
+  src: url("../[locale]/assets/fonts/LoveloBlack.otf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lovelo Line Bold";
+  src: url("../[locale]/assets/fonts/LoveloLineBold.otf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lovelo Line Light";
+  src: url("../[locale]/assets/fonts/LoveloLineLight.otf");
+  font-style: normal;
+}

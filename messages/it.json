@@ -1,0 +1,10 @@
+{
+  "HomePage": {
+    "forgot": "Hai dimenticato la password?",
+    "google": "Entra con Google",
+    "email": "Registrati con la tua email"
+  },
+  "ImageAlt": {
+    "logo": "Logo, immagine di una zampa di gatto."
+  }
+}

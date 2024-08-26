@@ -1,0 +1,103 @@
+@use "../../assets/mixins";
+@use "../../assets/variables";
+
+.container {
+  .loader {
+    margin-bottom: -40px;
+    position: relative;
+    width: 250px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .ball {
+      border-radius: 100%;
+      animation: ball 0.9s infinite;
+      background: #fff;
+    }
+
+    .circle {
+      position: absolute;
+      width: 100px;
+      height: 30px;
+      border-radius: 100%;
+      border: 5px solid transparent;
+      @include mixins.circle;
+      animation: circle 0.9s linear infinite;
+    }
+
+    .one {
+      transform: scale(1.1);
+    }
+
+    .two {
+      position: absolute;
+      transform: scale(0.8);
+      bottom: 50px;
+      left: 75px;
+      .ball,
+      .circle {
+        animation-delay: 0.5s;
+      }
+    }
+
+    .three {
+      position: absolute;
+      transform: scale(0.8);
+      bottom: 50px;
+      right: 75px;
+      .ball,
+      .circle {
+        animation-delay: 0.3s;
+      }
+    }
+  }
+}
+
+@keyframes ball {
+  0%,
+  100% {
+    transform: translateY(0);
+    height: 5px;
+    width: 45px;
+  }
+  5%,
+  90% {
+    height: 10px;
+    width: 25px;
+  }
+  20%,
+  80% {
+    height: 30px;
+    width: 15px;
+  }
+  60%,
+  70% {
+    transform: translateY(-90px);
+    height: 20px;
+    width: 20px;
+  }
+}
+
+@keyframes circle {
+  0% {
+    transform: scale(0.5);
+    opacity: 1;
+  }
+  75%,
+  85%,
+  90% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+  91% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(0.5);
+    opacity: 1;
+  }
+}

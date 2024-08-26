@@ -1,0 +1,45 @@
+@use "../../assets/mixins";
+@use "../../assets/variables";
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  gap: 10px;
+  margin-block: 10px;
+
+  .circle {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    @include mixins.circle;
+    animation: circle 1s linear infinite;
+  }
+
+  button {
+    border: none;
+    background: none;
+    color: variables.$main-pink;
+    font-family: variables.$main-font-line;
+    font-size: 40px;
+    text-shadow: 0 0 10px variables.$main-pink-shadow;
+    transition: all 0.35s ease;
+    cursor: pointer;
+
+    &:hover {
+      color: variables.$main-aqua;
+      text-shadow: 0 0 10px variables.$main-aqua-shadow;
+    }
+  }
+}
+
+@keyframes circle {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
