@@ -4,8 +4,11 @@ import { motion } from "framer-motion";
 import { Logo } from "./components/Logo/Logo";
 import { Loader } from "./components/Loader/Loader";
 import { Login } from "./components/Login/Login";
+import { useContext } from "react";
+import { globalContext } from "./(context)/globalcontext";
 
 export default function HomePage() {
+  const { logged } = useContext(globalContext);
 
   return (
     <main className={style.main}>
@@ -22,7 +25,7 @@ export default function HomePage() {
           style={{
             position: "absolute",
             top: 0,
-            left: 23,
+            left: logged ? -120 : 23,
             width: "100%",
             height: "100%",
           }}
@@ -40,6 +43,7 @@ export default function HomePage() {
             left: 0,
             width: "100%",
             height: "100%",
+            display: logged ? "none" : "block",
           }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
